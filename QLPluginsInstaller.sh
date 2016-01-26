@@ -13,10 +13,10 @@ brew cask install betterzipql invisorql provisionql qlcolorcode qlimagesize qlma
 echo Installing/Downloading Quick Look-plugins that are not from Homebrew 
 echo THEY MIGHT BE OUTDATED
 cp QLPlugins/*.qlgenerator ~/Library/QuickLook
-curl -o ~/Library/QuickLook http://repo.whine.fr/qlmoviepreview.qlgenerator-10.9.zip
-curl -o ~/Library/QuickLook http://ipaql.com/site/assets/files/1006/ipaql_1-3-0.zip
-curl -o ~/Library/QuickLook https://www.kainjow.com/downloads/ScriptQL_qlgenerator.zip
-curl -o ~/Library/QuickLook http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
+curl -o ~/Library/QuickLook/ http://repo.whine.fr/qlmoviepreview.qlgenerator-10.9.zip
+curl -o ~/Library/QuickLook/ http://ipaql.com/site/assets/files/1006/ipaql_1-3-0.zip
+curl -o ~/Library/QuickLook/ https://www.kainjow.com/downloads/ScriptQL_qlgenerator.zip
+curl -o ~/Library/QuickLook/ http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
 cd ~/Library/QuickLook
 for filename in ./*.zip; do
 	unzip $filename
