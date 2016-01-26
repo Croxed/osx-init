@@ -6,6 +6,8 @@ sh QLPluginsInstaller.sh
 sh dotfiles/brew.sh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp ZSH/.zshrc ~/.zshrc
-cp ZSH/aliases.zsh ~/.oh-my-zsh/custom
+cp ZSH/aliases.zsh ~/.oh-my-zsh/custom/
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 sh dotfiles/.osx
+brew install screenfetch
+zr

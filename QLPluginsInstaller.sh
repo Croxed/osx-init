@@ -9,6 +9,7 @@ else
 fi
 mkdir -p ~/Library/QuickLook
 echo Installing Quick Look-plugins from Homebrew
+brew tap caskroom/cask
 brew cask install betterzipql invisorql provisionql qlcolorcode qlimagesize qlmarkdown qlprettypatch quicklook-csv quicklook-json quicknfo scriptql suspicious-package webpquicklook
 echo Installing/Downloading Quick Look-plugins that are not from Homebrew 
 echo THEY MIGHT BE OUTDATED
