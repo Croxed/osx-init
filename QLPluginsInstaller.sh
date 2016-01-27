@@ -8,8 +8,7 @@ echo THEY MIGHT BE OUTDATED
 cp -R QLPlugins/*.qlgenerator ~/Library/QuickLook/
 curl -o ~/Library/QuickLook/1.zip http://repo.whine.fr/qlmoviepreview.qlgenerator-10.9.zip
 curl -o ~/Library/QuickLook/2.zip http://ipaql.com/site/assets/files/1006/ipaql_1-3-0.zip
-curl -o ~/Library/QuickLook/3.zip https://www.kainjow.com/downloads/ScriptQL_qlgenerator.zip
-curl -o ~/Library/QuickLook/4.zip http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
+curl -o ~/Library/QuickLook/3.zip http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
 cd ~/Library/QuickLook
 for filename in ./*.zip; do
 	unzip $filename
