@@ -29,7 +29,7 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 #brew install bash
-#brew tap homebrew/versions
+brew tap homebrew/versions
 #brew install bash-completion2
 
 # Install `wget` with IRI support.
@@ -99,6 +99,9 @@ brew install ssh-copy-id
 brew install tree
 brew install webkit2png
 brew install zopfli
+
+# Install some other things
+brew install screenfetch
 
 # Remove outdated versions from the cellar.
 brew cleanup
