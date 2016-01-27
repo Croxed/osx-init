@@ -1,5 +1,5 @@
 #! /bin/bash
-sh dotfiles/brew.sh 
+sh dotfiles/brew.sh
 mkdir -p tempInstall
 cd tempInstall
 brew install wget	
@@ -10,9 +10,7 @@ mv iTerm.app /Applications/
 open "Solarized Dark.itermcolors"
 cd ..
 rm -rf tempInstall
-chmod +x oh-my-zsh.sh
-#open oh-my-zsh.sh -a iTerm
-echo "Installing zsh-syntax-highlighting" 
-(sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" ; git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ; cp ZSH/.zshrc ~/.zshrc ; cp ZSH/aliases.zsh ~/.oh-my-zsh/custom/ ; source ~/.zshrc)
-chmod +x dotfiles.osx
-open dotfiles/.osx -a iTerm
+(chmod +x oh-my-zsh.sh ; open oh-my-zsh.sh -a /Applications/iTerm.app & wait ; chmod +x dotfiles/.osx ; open dotfiles/.osx -a /Applications/iTerm.app)
+echo "Installing zsh-syntax-highlighting"
+git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+(cp ZSH/.zshrc ~/.zshrc ; cp ZSH/aliases.zsh ~/.oh-my-zsh/custom/ ; source ~/.zshrc)
