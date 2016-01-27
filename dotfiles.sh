@@ -10,10 +10,9 @@ mv iTerm.app /Applications/
 open "Solarized Dark.itermcolors"
 cd ..
 rm -rf tempInstall
-open oh-my-zsh.sh -a iTerm
+chmod +x oh-my-zsh.sh
+#open oh-my-zsh.sh -a iTerm
 echo "Installing zsh-syntax-highlighting" 
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting 
-cp ZSH/.zshrc ~/.zshrc 
-cp ZSH/aliases.zsh ~/.oh-my-zsh/custom/ 
-source ~/.zshrc -a iTerm
+(sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" ; git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting ; cp ZSH/.zshrc ~/.zshrc ; cp ZSH/aliases.zsh ~/.oh-my-zsh/custom/ ; source ~/.zshrc)
+chmod +x dotfiles.osx
 open dotfiles/.osx -a iTerm
