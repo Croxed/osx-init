@@ -13,7 +13,7 @@ curl -LOk -o ~/Library/Prefereces/com.googlecode.iterm2.plist https://raw.github
 if [ ! -f "/tmp/oh-my-zsh.command" ]
 then
 	echo Hello
-    (curl -LOk https://raw.github.com/Croxed/osx-init/master/oh-my-zsh.command; mv oh-my-zsh.command /tmp/oh-my-zsh.command; sh /tmp/oh-my-zsh.command & wait)
+    (curl -LOk https://raw.github.com/Croxed/osx-init/master/scripts/oh-my-zsh.command; mv oh-my-zsh.command /tmp/oh-my-zsh.command; sh /tmp/oh-my-zsh.command & wait)
 else
 	sh /tmp/oh-my-zsh.command & wait
 fi

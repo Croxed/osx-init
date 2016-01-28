@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "Installing Xcode Command Line Tools"
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/xcode-cli-install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/scripts/xcode-cli-install.sh)"
 echo "Updating Brew or installing if Homebrew doesn't exist" 
 if ! type -p brew > /dev/null ; then
     # Install Homebrew
