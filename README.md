@@ -3,6 +3,21 @@
 > It includes [Homebrew](brew.sh), [iTerm](https://www.iterm2.com) and also the theme [Solarized](http://ethanschoonover.com/solarized).
 
 ## Install
+
+### Basic installation
+OS X Fresh Install can be installed with `curl` or `wget`.
+
+#### via curl 
+
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/install.sh)"
+```
+
+#### via wget
+```shell
+sh -c "$(wget https://raw.github.com/Croxed/OSX-Fresh-Install/master/install.sh -O -)"
+```
+
 ### Install everything
 - Run `sh install.sh` in a terminal
 
