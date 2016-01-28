@@ -11,7 +11,7 @@ curl -o ~/Library/QuickLook/2.zip http://ipaql.com/site/assets/files/1006/ipaql_
 curl -o ~/Library/QuickLook/3.zip http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
 cd ~/Library/QuickLook
 for filename in ./*.zip; do
-	unzip $filename
+	unzip -q $filename
 done
 rm -rf *.zip
 echo Restarting Quick Look-manager
