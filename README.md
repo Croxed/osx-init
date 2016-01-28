@@ -10,12 +10,12 @@ OS X Fresh Install can be installed with `curl` or `wget`.
 #### via curl 
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/install.sh)"
 ```
 
 #### via wget
 ```shell
-sh -c "$(wget https://raw.github.com/Croxed/OSX-Fresh-Install/master/install.sh -O -)"
+sh -c "$(wget https://raw.github.com/Croxed/osx-init/master/install.sh -O -)"
 ```
 
 ### Optimize the system and install dev-tools
@@ -25,7 +25,7 @@ Run the following command
 
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/dotfiles.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/dotfiles.sh)"
 ```
 
 >This will install a lot of development tools and will optimize OS X based on my preferences. 
@@ -40,7 +40,7 @@ Credit for sensible OS X defaults:
 Run the following command
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/QLPluginsInstall.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/QLPluginsInstall.sh)"
 ```
 
 ##Quick Look Plugins
