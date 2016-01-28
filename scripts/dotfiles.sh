@@ -9,10 +9,12 @@ then
 	unzip iTerm2-2_1_4.zip
 	mv iTerm.app /Applications/
 fi
-curl -LOk -o ~/Library/Prefereces/com.googlecode.iterm2.plist https://raw.github.com/Croxed/osx-init/master/extras/com.googlecode.iterm2.plist
+wget -c https://raw.github.com/Croxed/osx-init/master/extras/com.googlecode.iterm2.plist && 
+rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && 
+mv com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist && 
+open /Applications/iTerm.app
 if [ ! -f "/tmp/oh-my-zsh.command" ]
 then
-	echo Hello
     (curl -LOk https://raw.github.com/Croxed/osx-init/master/scripts/oh-my-zsh.command; mv oh-my-zsh.command /tmp/oh-my-zsh.command; sh /tmp/oh-my-zsh.command & wait)
 else
 	sh /tmp/oh-my-zsh.command & wait
