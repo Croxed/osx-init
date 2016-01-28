@@ -1,5 +1,5 @@
 #! /bin/bash
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/dotfiles/brew.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/brew.sh)"
 mkdir -p tempInstall
 cd tempInstall
 brew install wget	
