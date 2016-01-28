@@ -18,14 +18,15 @@ sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/insta
 sh -c "$(wget https://raw.github.com/Croxed/OSX-Fresh-Install/master/install.sh -O -)"
 ```
 
-### Install everything
-- Run `sh install.sh` in a terminal
-
-
 ### Optimize the system and install dev-tools
 > This requires Homebrew to be installed, so run `sh brewInstall.sh` before doing this.
+ 
+Run the following command
 
-- Run `sh dotfiles.sh`
+
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/dotfiles.sh)"
+```
 
 >This will install a lot of development tools and will optimize OS X based on my preferences. 
 It will also install [iTerm 2](https://www.iterm2.com) and install [Solarized Dark-theme](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized) for [iTerm 2](https://www.iterm2.com).
@@ -36,7 +37,11 @@ Credit for sensible OS X defaults:
 ### Only Install the Quick Look-plugins
 > This requires Homebrew to be installed, so run `sh brewInstall.sh` before doing this.
 
-- Run `sh QLPluginsInstall.sh`
+Run the following command
+
+```shell
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/QLPluginsInstall.sh)"
+```
 
 ##Quick Look Plugins
 ### [QLColorCode](https://code.google.com/p/qlcolorcode/)
