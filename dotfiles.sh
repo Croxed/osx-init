@@ -14,9 +14,9 @@ open "Solarized Dark.itermcolors"
 if [ ! -f "/tmp/oh-my-zsh.command" ]
 then
 	echo Hello
-    (curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/oh-my-zsh.command; mv oh-my-zsh.command /tmp/oh-my-zsh.command; sudo open -W -a iTerm /tmp/oh-my-zsh.command)
+    (curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/oh-my-zsh.command; mv oh-my-zsh.command /tmp/oh-my-zsh.command; sh /tmp/oh-my-zsh.command & wait)
 else
-	sudo open -W -a iTerm /tmp/oh-my-zsh.command
+	sh /tmp/oh-my-zsh.command & wait
 fi
 cd ..
 rm -rf tempInstall
