@@ -11,7 +11,8 @@ then
 fi
 wget -c https://raw.github.com/Croxed/osx-init/master/extras/com.googlecode.iterm2.plist && 
 rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && 
-mv com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist && 
+mv com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist &&
+defaults read com.googlecode.iterm2 &&
 open /Applications/iTerm.app
 if [ ! -f "/tmp/oh-my-zsh.command" ]
 then
