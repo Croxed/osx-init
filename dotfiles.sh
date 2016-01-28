@@ -8,8 +8,12 @@ wget -c https://iterm2.com/downloads/stable/iTerm2-2_1_4.zip
 unzip iTerm2-2_1_4.zip
 mv iTerm.app /Applications/
 open "Solarized Dark.itermcolors"
-sh -c "$(curl https://raw.github.com/Croxed/OSX-Fresh-Install/master/oh-my-zsh.command)"
-(chmod +x oh-my-zsh.commad ; open oh-my-zsh.command & wait)
+if [ ! -f "/tmp/oh-my-zsh.command" ]
+then
+    wget -O /tmp/oh-my-zsh.command https://raw.github.com/Croxed/OSX-Fresh-Install/master/oh-my-zsh.command
+fi
+chmod +x /tmp/oh-my-zsh.command
+open /tmp/oh-my-zsh.command
 cd ..
 rm -rf tempInstall
 echo "Installing zsh-syntax-highlighting"
