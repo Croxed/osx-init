@@ -137,6 +137,9 @@ Run `brew cask install ScriptQL`or [download manually](https://www.kainjow.com/d
 
 [Download manually](http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip)
 
+##Thanks to...
+[Mathias Bynens](https://mathiasbynens.be) and his [dotfiles](https://github.com/mathiasbynens/dotfiles)
+
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
