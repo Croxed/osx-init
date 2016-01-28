@@ -1,14 +1,4 @@
 #! /bin/bash
-
-closeWindow() {
-    /usr/bin/osascript << _OSACLOSE_
-	delay 3.0
-    tell application "Terminal"
-        close (every window whose name contains "oh-my-zsh")
-    end tell
-_OSACLOSE_
-}
-
 sh -c "$(curl -fsSL https://raw.github.com/Croxed/OSX-Fresh-Install/master/brew.sh)"
 mkdir -p tempInstall
 cd tempInstall
@@ -23,8 +13,8 @@ then
     curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/oh-my-zsh.command
 fi
 mv oh-my-zsh.command /tmp/oh-my-zsh.command
-chmod +x /tmp/oh-my-zsh.command
-(open /tmp/oh-my-zsh.command && closeWindow ; curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/ZSH/.zshrc ; curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/ZSH/aliases.zsh ; source ~/.zshrc)
+sh /tmp/oh-my-zsh.command &
+(curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/ZSH/.zshrc ; curl -LOk https://raw.github.com/Croxed/OSX-Fresh-Install/master/ZSH/aliases.zsh ; source ~/.zshrc)
 (mv .zshrc ~/.zshrc; mv aliases.zsh ~/.oh-my-zsh/custom/aliases.zsh)
 cd ..
 rm -rf tempInstall
