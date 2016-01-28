@@ -25,7 +25,7 @@ Run the following command
 
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/dotfiles.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/scripts/dotfiles.sh)"
 ```
 
 >This will install a lot of development tools and will optimize OS X based on my preferences. 
@@ -40,7 +40,7 @@ Credit for sensible OS X defaults:
 Run the following command
 
 ```shell
-sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/QLPluginsInstall.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/scripts/QLPluginsInstall.sh)"
 ```
 
 ##Quick Look Plugins
