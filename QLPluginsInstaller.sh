@@ -20,7 +20,7 @@ brew cask install webpquicklook
 # All Quick Look-plugins that aren't in homebrew
 echo Installing/Downloading Quick Look-plugins that are not from Homebrew 
 echo THEY MIGHT BE OUTDATED
-curl -o ~/Library/QuickLook https://raw.github.com/Croxed/OSX-Fresh-Install/master/QLPlugins/QLStephen.qlgenerator
+curl -o ~/Library/QuickLook/QLStephen.qlgenerator https://raw.github.com/Croxed/OSX-Fresh-Install/master/QLPlugins/QLStephen.qlgenerator
 
 # Downloading the plugins
 curl -o ~/Library/QuickLook/1.zip http://repo.whine.fr/qlmoviepreview.qlgenerator-10.9.zip
