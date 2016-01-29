@@ -101,11 +101,10 @@ Run `brew cask install webpquicklook` or [download manually](https://github.com/
 
 Run `brew cask install suspicious-package` or [download manually](http://www.mothersruin.com/software/downloads/SuspiciousPackage.pkg)
 
-### [ProvisionQL](https://github.com/ealeksandrov/ProvisionQL)
+### [InvisorQL](http://www.pozdeev.com/invisor/)
+> Displays technical information about your video, audio and photo files.
 
-> Preview iOS / OS X app and provision information
-
-Run `brew cask install provisionql` or [download manually](https://github.com/ealeksandrov/ProvisionQL/releases)
+Run `brew cask install invisorql`or [download manually](http://www.pozdeev.com/invisor/InvisorQL.zip)
 
 ### [QuickNFO](https://github.com/planbnet/QuickNFO)
 > Preview NFO files
