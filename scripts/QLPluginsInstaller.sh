@@ -7,7 +7,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 mkdir -p ~/Library/QuickLook
 echo Installing Quick Look-plugins from Homebrew
-brew tap caskroom/cask
 
 # All Quick Look-plugins from homebrew
 brew cask install betterzipql
