@@ -8,6 +8,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 mkdir -p ~/Library/QuickLook
 echo Installing Quick Look-plugins from Homebrew
 
+# Checking if Homebrew is installed
+if ! type -p brew > /dev/null ; then
+    # Install Homebrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 # All Quick Look-plugins from homebrew
 brew cask install betterzipql
 brew cask install provisionql 
