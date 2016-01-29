@@ -100,8 +100,18 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
-# Install some other things
+# Installing some cool stuff
 brew install screenfetch
+
+# Installing usefull applications
+brew tap caskroom/cask
+brew cask install iterm --appdir=/Applications
+brew cask install google-chrome-canary --appdir=/Applications
+brew cask install mpv --appdir=/Applications
+brew cask install keka --appdir=/Applications
+brew cask install dropbox --appdir=/Applications
+brew cask install transmission --appdir=/Applications
+brew cask install sublime-text --appdir=/Applications
 
 # Remove outdated versions from the cellar.
 brew cleanup
