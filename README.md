@@ -29,7 +29,7 @@ sh -c "$(curl -fsSL https://raw.github.com/Croxed/osx-init/master/scripts/dotfil
 ```
 
 >This will install a lot of development tools and will optimize OS X based on my preferences. 
-It will also install [iTerm 2](https://www.iterm2.com) and install [Solarized Dark-theme](https://github.com/altercation/solarized/tree/master/iterm2-colors-solarized) for [iTerm 2](https://www.iterm2.com).
+It will also install some applications that I find useful.
 
 Credit for sensible OS X defaults: 
 [Mathias Bynens](https://mathiasbynens.be)
