@@ -105,7 +105,8 @@ brew install screenfetch
 
 # Installing usefull applications
 brew tap caskroom/cask
-brew cask install iterm --appdir=/Applications
+brew tap caskroom/versions
+brew cask install iterm2-beta --appdir=/Applications
 brew cask install google-chrome-canary --appdir=/Applications
 brew cask install mpv --appdir=/Applications
 brew cask install keka --appdir=/Applications
