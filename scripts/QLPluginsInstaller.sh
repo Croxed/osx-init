@@ -5,7 +5,6 @@ brew tap caskroom/cask
 
 # All Quick Look-plugins from homebrew
 brew cask install betterzipql
-brew cask install invisorql 
 brew cask install provisionql 
 brew cask install qlcolorcode 
 brew cask install qlimagesize 
