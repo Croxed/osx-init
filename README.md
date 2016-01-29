@@ -1,7 +1,6 @@
 # OS X Fresh Install
 > Some scripts to make your OS X-life easier.
-> It includes [Homebrew](brew.sh), [iTerm](https://www.iterm2.com) and also the theme [Solarized](http://ethanschoonover.com/solarized).
-
+> It uses [Homebrew](brew.sh) for the most part.
 ## Install
 
 ### Basic installation
