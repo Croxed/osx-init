@@ -8,6 +8,12 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Checking if Homebrew is installed
+if ! type -p brew > /dev/null ; then
+    # Install Homebrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -112,6 +118,7 @@ brew cask install keka --appdir=/Applications
 brew cask install dropbox --appdir=/Applications
 brew cask install transmission --appdir=/Applications
 brew cask install sublime-text-dev --appdir=/Applications
+brew cask install xquartz-beta --appdir=/Applications
 
 # Remove outdated versions from the cellar.
 brew cleanup
