@@ -19,7 +19,7 @@ sh -c "$(wget https://raw.github.com/Croxed/osx-init/master/install.sh -O -)"
 ```
 
 ### Optimize the system and install dev-tools
-> This requires Homebrew to be installed, so run `sh brewInstall.sh` before doing this.
+> This requires [Homebrew](brew.sh) to be installed, so install it before doing this.
  
 Run the following command
 
@@ -35,7 +35,7 @@ Credit for sensible OS X defaults:
 [Mathias Bynens](https://mathiasbynens.be)
 
 ### Only Install the Quick Look-plugins
-> This requires Homebrew to be installed, so run `sh brewInstall.sh` before doing this.
+> This requires [Homebrew](brew.sh) to be installed, so install it before doing this.
 
 Run the following command
 
