@@ -1,10 +1,11 @@
-# OS X Fresh Install
+# OS X Initializer
 > Some scripts to make your OS X-life easier.
 > It uses [Homebrew](brew.sh) for the most part.
+
 ## Install
 
 ### Basic installation
-OS X Fresh Install can be installed with `curl` or `wget`.
+OS X Initializer can be installed with `curl` or `wget`.
 
 #### via curl 
 
@@ -99,6 +100,12 @@ Run `brew cask install webpquicklook` or [download manually](https://github.com/
 > Preview the contents of a standard Apple installer package
 
 Run `brew cask install suspicious-package` or [download manually](http://www.mothersruin.com/software/downloads/SuspiciousPackage.pkg)
+
+### [ProvisionQL](https://github.com/ealeksandrov/ProvisionQL)
+
+> Preview iOS / OS X app and provision information
+
+Run `brew cask install provisionql` or [download manually](https://github.com/ealeksandrov/ProvisionQL/releases)
 
 ### [InvisorQL](http://www.pozdeev.com/invisor/)
 > Displays technical information about your video, audio and photo files.
