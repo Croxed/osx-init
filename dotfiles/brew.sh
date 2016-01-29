@@ -104,7 +104,6 @@ brew install zopfli
 brew install screenfetch
 
 # Installing usefull applications
-brew tap caskroom/cask
 brew tap caskroom/versions
 brew cask install iterm2-beta --appdir=/Applications
 brew cask install google-chrome-canary --appdir=/Applications
@@ -112,7 +111,7 @@ brew cask install mpv --appdir=/Applications
 brew cask install keka --appdir=/Applications
 brew cask install dropbox --appdir=/Applications
 brew cask install transmission --appdir=/Applications
-brew cask install sublime-text --appdir=/Applications
+brew cask install sublime-text-dev --appdir=/Applications
 
 # Remove outdated versions from the cellar.
 brew cleanup
