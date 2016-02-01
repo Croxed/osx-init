@@ -61,7 +61,7 @@ fi
 if [ ! -f ~/.zshrc ] ; then
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O ~/.zshrc
 else
-	confirm "It seems that you already have a .zshrc-file. Do you want to replace it? y/N" && 
+	confirm "It seems that you already have a .zshrc-file. Do you want to make a backup and replace it? y/N" && 
 	makeBackup ~/.zshrc &&
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O ~/.zshrc	
 fi
@@ -69,7 +69,7 @@ fi
 if [ ! -f ~/.oh-my-zsh/custom/aliases.zsh ] ; then
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O ~/.oh-my-zsh/custom/aliases.zsh
 else
-	confirm "It seems that you already have a aliases.zsh-file. Do you want to replace it? y/N" && 
+	confirm "It seems that you already have a aliases.zsh-file. Do you want to make a backup and replace it? y/N" && 
 	makeBackup ~/.oh-my-zsh/custom/aliases.zsh &&
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O ~/.oh-my-zsh/custom/aliases.zsh	
 fi
