@@ -57,7 +57,8 @@ if [ ! -f "/tmp/oh-my-zsh.sh" ] ; then
 else
 	sh /tmp/oh-my-zsh.sh & wait
 fi
-
+ 
+# Downloading a custom .zshrc-file
 if [ ! -f ~/.zshrc ] ; then
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O ~/.zshrc
 else
@@ -66,6 +67,7 @@ else
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O ~/.zshrc	
 fi
 
+# Downloading custom aliases.zsh
 if [ ! -f ~/.oh-my-zsh/custom/aliases.zsh ] ; then
 	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O ~/.oh-my-zsh/custom/aliases.zsh
 else
