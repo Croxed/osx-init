@@ -65,9 +65,6 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # Update system with all available updates #
 alias sysupdate='sudo softwareupdate -iva'
 
-# Connect to server #
-alias ssh2server='ssh root@192.168.5.6'
-
 # Edit this file (as I tend to do it quite often) #
 alias editAlias='nano $ZSH_CUSTOM/aliases.zsh'
 
