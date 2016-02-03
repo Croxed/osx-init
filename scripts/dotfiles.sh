@@ -1,4 +1,4 @@
-#! /bin/zsh
+#! /bin/bash
 
 confirm () {
     # call with a prompt string or use a default
@@ -25,7 +25,7 @@ makeBackup() {
 	fi
 
 	if [[ -n $1 ]]; then
-		mv $1 $dir/
+		mv "$1" "$dir"/
 	fi
 }
 
