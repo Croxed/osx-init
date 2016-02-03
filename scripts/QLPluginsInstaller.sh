@@ -39,12 +39,12 @@ curl -o ~/Library/QuickLook/2.zip http://ipaql.com/site/assets/files/1006/ipaql_
 curl -o ~/Library/QuickLook/3.zip http://blog.timac.org/post-images/StringsFileQuickLook/StringsFile.qlgenerator.zip
 
 # Moving into QuickLook-folder to extract the .zip's
-cd ~/Library/QuickLook
+cd ~/Library/QuickLook || exit
 for filename in ./*.zip; do
-	unzip -q $filename
+	unzip -q "$filename"
 done
 
 # Removing all .zip-archives
-rm -rf *.zip
+rm -rf ./*.zip
 echo Restarting Quick Look-manager
 qlmanage -r
