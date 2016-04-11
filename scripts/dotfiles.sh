@@ -52,28 +52,26 @@ defaults read com.googlecode.iterm2 &&
 open /Applications/iTerm.app
 
 # Downloading oh-my-zsh
-if [ ! -f "/tmp/oh-my-zsh.sh" ] ; then
-    (wget -c https://raw.github.com/Croxed/osx-init/master/scripts/oh-my-zsh.sh -O /tmp/oh-my-zsh.sh; sh /tmp/oh-my-zsh.sh & wait)
+if [ ! -f "/tmp/zgen.sh" ] ; then
+    (wget -c https://raw.github.com/Croxed/osx-init/master/scripts/zgen.sh -O /tmp/zgen.sh; sh /tmp/zgen.sh & wait)
 else
 	sh /tmp/oh-my-zsh.sh & wait
 fi
- 
+
 # Downloading a custom .zshrc-file
-if [ ! -f "$HOME/.zshrc" ] ; then
-	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O "$HOME/.zshrc"
-else
-	confirm "It seems that you already have a .zshrc-file. Do you want to make a backup and replace it? y/N" && 
-	makeBackup "$HOME/.zshrc" &&
-	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O "$HOME/.zshrc"	
-fi
+wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zshrc -O "$HOME/.zshrc"
+
+#Downloading zgen-setup
+wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/.zgen-setup -O "$HOME/.zgen-setup"
 
 # Downloading custom aliases.zsh
-if [ ! -f "$HOME/.oh-my-zsh/custom/aliases.zsh" ] ; then
-	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O "$HOME/.oh-my-zsh/custom/aliases.zsh"
+mkdir -p "$HOME/.zshrc.d"
+if [ ! -f "$HOME/.zshrc.d/aliases.zsh" ] ; then
+	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O "$HOME/.zshrc.d/aliases.zsh"
 else
 	confirm "It seems that you already have a aliases.zsh-file. Do you want to make a backup and replace it? y/N" && 
-	makeBackup "$HOME/.oh-my-zsh/custom/aliases.zsh" &&
-	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O "$HOME/.oh-my-zsh/custom/aliases.zsh"	
+	makeBackup "$HOME/.zshrc.d/aliases.zsh" &&
+	wget -c https://raw.github.com/Croxed/osx-init/master/ZSH/aliases.zsh -O "$HOME/.zshrc.d/aliases.zsh	"	
 fi
 
 echo "Installing zsh-syntax-highlighting"

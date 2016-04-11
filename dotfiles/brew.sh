@@ -76,8 +76,10 @@ brew install john
 brew install knock
 brew install netpbm
 brew install nmap
+brew install neofetch
 brew install pngcheck
 brew install socat
+brew install stow
 brew install sqlmap
 brew install tcpflow
 brew install tcpreplay
