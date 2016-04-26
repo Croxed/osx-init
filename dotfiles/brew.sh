@@ -122,5 +122,9 @@ brew cask install transmission --appdir=/Applications
 brew cask install sublime-text-dev --appdir=/Applications
 brew cask install xquartz-beta --appdir=/Applications
 
+# Install neovim dev
+brew tap neovim/neovim
+brew install --HEAD neovim
+
 # Remove outdated versions from the cellar.
 brew cleanup
